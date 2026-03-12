@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+        <title>Que Rolem os Dados</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rolador de Dados</h1>
+            <p>Web-app criado para gerar rolgem de dados a partir de um numero de lados escolhido pelo Usuario</p>
+        </header>
+        <container>
+            <section>
+                <h2>Escolha seu dado:</h2>
+                <ul>
+                    <li>D4</li>
+                    <li>D6</li>
+                    <li>D8</li>
+                    <li>D10</li>
+                    <li>D12</li>
+                    <li>D20</li>
+                    <li>D100</li>
+                </ul>              
+            </section>
+            <div>
+                <h3>Role o Dado</h3>
+                <label># do Dado:</label>
+                <input type="number" value="4" min="4" max="100">
+                <button onclick="rolar()">Rolar</button> 
+                <article id="resultadoDado">
+                    <div id="dadoImg"></div>
+                </article>
+
+            </div>
+        </container>
+        <script src="index.js"></script>
+    </body>
+</html>
